@@ -18,12 +18,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.LeushinP.Sprint1.Task0.V26.Lib\Tyuiu.LeushinP.Sprint1.Task0.V26.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.LeushinP.Sprint.1.Task0.V26.Lib\Tyuiu.LeushinP.Sprint.1.Task0.V26.Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="tyuiu.cources.programming.interfaces">
-      <HintPath>..\..\..\..\Desktop\tyuiu.cources.programming.interfaces (1).dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\tyuiu.cources.programming.interfaces.dll</HintPath>
     </Reference>
   </ItemGroup>
 
