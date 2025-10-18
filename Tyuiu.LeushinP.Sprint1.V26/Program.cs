@@ -1,7 +1,8 @@
-﻿using Tyuiu.LeushinP.Sprint1.Task0.V26.Lib;
-using tyuiu.cources.programming.interfaces.Sprint1;
+﻿using System;
+using System.Globalization;
+using Tyuiu.LeushinP.Sprint1.Task0.V26.Lib;
 
-namespace Tyuiu.LeushinP.Sprint1.Task0.V26
+namespace Tyuiu.LeushinP.Sprint1.V26
 {
     class Program
 
@@ -13,9 +14,9 @@ namespace Tyuiu.LeushinP.Sprint1.Task0.V26
             Console.Title = "* Спринт #1 | Выполнил: Леушин П.С | Смартб-25-1";
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* Спринт #1                                                                *");
-            Console.WriteLine("* Тема: Создание итогового решения                                         *");
+            Console.WriteLine("* Тема: Базовые навыки работы в C#                                         *");
             Console.WriteLine("* Задание #0                                                               *");
-            Console.WriteLine("* Вариант #26                                                               *");
+            Console.WriteLine("* Вариант #26                                                              *");
             Console.WriteLine("* Выполнил: Леушин Павел Сергеевич | Смартб-25-1                           *");
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* Условие:                                                                 *");
@@ -31,13 +32,10 @@ namespace Tyuiu.LeushinP.Sprint1.Task0.V26
             Console.WriteLine("****************************************************************************");
 
 
-
-
-
             Console.WriteLine(ds.Calculate());
-            Console.ReadLine();
+
+
+            Console.WriteLine();
         }
-
-
     }
 }
