@@ -16,7 +16,7 @@ namespace Tyuiu.LeushinP.Sprint1.Task1.V25.Test
 
 
             double result = ds.Calculate(x, y);
-            NUnit.Framework.Assert.AreEqual(1, result);
+            Assert.AreEqual(1, result);
         }
     }
 }
