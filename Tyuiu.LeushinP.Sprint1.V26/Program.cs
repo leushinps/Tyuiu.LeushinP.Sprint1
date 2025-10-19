@@ -37,5 +37,5 @@ namespace Tyuiu.LeushinP.Sprint1.V26
 
             Console.WriteLine();
         }
-    }
+    } 
 }
