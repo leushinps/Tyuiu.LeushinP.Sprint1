@@ -10,6 +10,7 @@ public class DataServiceTest
     [Test]
     public void ValidExpression()
     {
+
         DataService ds = new DataService();
         var res = ds.Calculate();
         Assert.AreEqual(7, res);

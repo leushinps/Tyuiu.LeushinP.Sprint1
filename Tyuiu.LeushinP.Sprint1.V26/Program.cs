@@ -9,6 +9,7 @@ namespace Tyuiu.LeushinP.Sprint1.V26
     {
         static void Main(string[] args)
         {
+
             DataService ds = new DataService();
 
             Console.Title = "* Спринт #1 | Выполнил: Леушин П.С | Смартб-25-1";

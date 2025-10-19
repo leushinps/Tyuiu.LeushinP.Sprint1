@@ -4,6 +4,7 @@
     { 
         public double Calculate()
         {
+
             return 4 * 5 / 2 - 18 / 2 / 3;
         }
     }
