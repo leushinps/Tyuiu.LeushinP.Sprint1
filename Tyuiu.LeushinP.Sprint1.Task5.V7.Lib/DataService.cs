@@ -5,20 +5,20 @@ namespace Tyuiu.LeushinP.Sprint1.Task5.V7.Lib
 {
     public class DataService : ISprint1Task5V7
     {
-        public int AngleToHoursMinutes(double f)
+        public int AngleToHoursMinutes(double x)
         {
-            if (f <= 0 || f >= 360)
-                throw new ArgumentException("Угол должен быть в диапазоне: 0 < f < 360");
+            if (x <= 0 || x >= 360)
+                throw new ArgumentException("Угол должен быть в диапазоне: 0 < x < 360");
 
-            double totalHours = f / 30.0;
+            double totalHours = x / 30.0;
 
 
             return (int)totalHours;
         }
 
-        public (int hours, int minutes, int seconds) CalculateTimeComponents(double f)
+        public (int hours, int minutes, int seconds) CalculateTimeComponents(double x)
         {
-            double totalHours = f / 30.0;
+            double totalHours = x / 30.0;
 
             int hours = (int)totalHours;
             double fractionalHours = totalHours - hours;
