@@ -1,5 +1,5 @@
 ﻿using System;
-Tyuiu.LeushinP.Sprint1.Task4.V8.Lib;
+using Tyuiu.LeushinP.Sprint1.Task4.V8.Lib;
 
 namespace Tyuiu.LeushinP.Sprint1.Task4.V8
 {
@@ -25,16 +25,23 @@ namespace Tyuiu.LeushinP.Sprint1.Task4.V8
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         *");
             Console.WriteLine("****************************************************************************");
 
+            int x, y;
 
+            Console.WriteLine("Введите значение x:");
+            x = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Введите значение y:");
+             y = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                               *");
             Console.WriteLine("****************************************************************************");
 
+            Console.WriteLine("(x - y) + 3 * x = " + ds.Calculate(x, y));
 
             Console.WriteLine();
             Console.WriteLine("Для завершения нажмите любую клавишу...                                     ");
-            Console.ReadKey();
+
         }
     }
 }
