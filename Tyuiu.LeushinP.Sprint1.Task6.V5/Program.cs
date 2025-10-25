@@ -1,7 +1,7 @@
 ﻿using System;
-using Tyuiu.LeushinP.Sprint1.Task5.V7.Lib;
+using Tyuiu.LeushinP.Sprint1.Task6.V5.Lib;
 
-namespace Tyuiu.LeushinP.Sprint1.Task5.V7
+namespace Tyuiu.LeushinP.Sprint1.Task6.V5
 {
     class Program
     {
@@ -12,21 +12,20 @@ namespace Tyuiu.LeushinP.Sprint1.Task5.V7
             Console.Title = "Спринт #1 | Выполнил: Леушин П.С | СМАРТб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Преобразование типов и класс Convert                              *");
-            Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #7                                                              *");
+            Console.WriteLine("* Тема: Работа со строками Convert                                        *");
+            Console.WriteLine("* Задание #6                                                              *");
+            Console.WriteLine("* Вариант #5                                                              *");
             Console.WriteLine("* Выполнил: Леушин Павел Сергеевич | СМАРТб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Определить h – полное количество часов прошедших от начала              *");
-            Console.WriteLine("* суток до того момента (в первой половине дня), когда часовая стрелка    *");
-            Console.WriteLine("* повернулась на f градусов (0<f<360, f – вещественное число).            *");
+            Console.WriteLine("* Написать программу: пользователь вводит текст. Напечатать те слова,     *");
+            Console.WriteLine("* которые являются симметричными (например: казак, шалаш).               *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.Write("Введите угол поворота часовой стрелки f: ");
-            double f = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите текст: ");
+            string inputText = Console.ReadLine();
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
@@ -34,8 +33,16 @@ namespace Tyuiu.LeushinP.Sprint1.Task5.V7
 
             try
             {
-                int result = ds.AngleToHoursMinutes(f);
-                Console.WriteLine($"Полное количество часов: {result}");
+                string result = ds.CheckSymmetricalWords(inputText);
+
+                if (string.IsNullOrEmpty(result))
+                {
+                    Console.WriteLine("Симметричные слова не найдены.");
+                }
+                else
+                {
+                    Console.WriteLine("Найденные симметричные слова: " + result);
+                }
             }
             catch (Exception ex)
             {
