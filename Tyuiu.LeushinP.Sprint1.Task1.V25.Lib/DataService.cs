@@ -8,7 +8,7 @@ namespace Tyuiu.LeushinP.Sprint1.Task1.V25.Lib
 
         public double Calculate(double x, double y)
         {
-            return Math.Round((x * y) / (1 + x), 2);
+            return Math.Round(x * y) / (1 + x);
         }
     }
 }
