@@ -37,18 +37,9 @@ namespace Tyuiu.LeushinP.Sprint1.Task7.V7
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            try
-            {
-                double result = ds.Calculate(x, y);
-                Console.WriteLine($"Результат: {result}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ошибка: {ex.Message}");
-            }
 
-            Console.WriteLine();
-            Console.WriteLine("Для завершения нажмите любую клавишу...");
+            var result = ds.Calculate(x, y);
+            Console.WriteLine(result);
             Console.ReadKey();
         }
     }
