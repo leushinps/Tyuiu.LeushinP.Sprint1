@@ -8,10 +8,7 @@ namespace Tyuiu.LeushinP.Sprint1.Task4.V8.Lib
     {
         public double Calculate(double x, double y)
         {
-            double num = Math.Sqrt(x - y) + 3 * x;
-            double den = 3 + Math.Abs(x);
-
-            return num / den;
+            return Math.Round((Math.Sqrt(Math.Abs(x - y)) + 3 * x) / (3 + Math.Abs(x)), 3);
         }
     }
 }

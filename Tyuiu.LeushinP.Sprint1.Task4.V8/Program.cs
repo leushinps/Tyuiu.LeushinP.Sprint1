@@ -25,28 +25,18 @@ namespace Tyuiu.LeushinP.Sprint1.Task4.V8
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.Write("Введите значение X: ");
-            double x = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Введите значение Y: ");
-            double y = Convert.ToDouble(Console.ReadLine());
-
+            double x;
+            Console.WriteLine("Введите значение X:");
+            x = Convert.ToInt32(Console.ReadLine());
+            double y;
+            Console.WriteLine("Введите значение Y:");
+            y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("* Результат:                                                              *");
             Console.WriteLine("***************************************************************************");
+            Console.WriteLine(ds.Calculate(x, y));
 
-            try
-            {
-                double result = ds.Calculate(x, y);
-                Console.WriteLine($"Результат: {Math.Round(result, 3)}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Ошибка: {ex.Message}");
-            }
 
-            Console.WriteLine();
-            Console.WriteLine("Для завершения нажмите любую клавишу...");
             Console.ReadKey();
         }
     }

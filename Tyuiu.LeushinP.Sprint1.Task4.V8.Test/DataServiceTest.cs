@@ -11,11 +11,11 @@ namespace Tyuiu.LeushinP.Sprint1.Task4.V8.Test
         public void ValidCalculation()
         {
             DataService ds = new DataService();
-            double x = 4;
+            double x = 10;
             double y = 1;
-            double wait = 2.154;
-            double res = ds.Calculate(x, y);
-            Assert.AreEqual(wait, Math.Round(res, 3));
+            double wait = 2.538;
+            var res = ds.Calculate(x, y);
+            Assert.AreEqual(wait, res);
         }
     }
 }
