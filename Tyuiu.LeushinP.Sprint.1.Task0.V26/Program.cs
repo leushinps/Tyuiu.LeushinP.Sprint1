@@ -1,4 +1,4 @@
-﻿using Tyuiu.LeushinP.Sprint._1.Task0.V26.Lib;
+﻿using Tyuiu.LeushinP.Sprint1.Task0.V26.Lib;
 
 namespace Tyuiu.LeushinP.Sprint1.V26
 {

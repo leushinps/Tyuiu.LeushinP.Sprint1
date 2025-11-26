@@ -6,7 +6,7 @@ public class DataService : ISprint1Task7V7
 {
     public double Calculate(double x, double y)
     {
-
+        // конст
         double n = 5;
 
 
@@ -16,7 +16,7 @@ public class DataService : ISprint1Task7V7
             throw new ArgumentException("Деление на ноль: знаменатель (n - 2y^x) равен нулю");
         }
 
-
+       // корр степ
         if (y < 0 && x != (int)x)
         {
             throw new ArgumentException("Недопустимые значения: отрицательное y с нецелым x");
