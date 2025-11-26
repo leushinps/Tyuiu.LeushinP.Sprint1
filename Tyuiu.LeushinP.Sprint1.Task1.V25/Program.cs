@@ -35,7 +35,7 @@ namespace Tyuiu.LeushinP.Sprint1.Task1.V25
 
             if (1 + x == 0)
             {
-                Console.WriteLine("Ошибка: деление на ноль! Знаменатель (1 + x) не может быть равен нулю.");
+                Console.WriteLine("Ошибка Знаменатель (1 + x) не может быть равен нулю.");
             }
             else
             {
