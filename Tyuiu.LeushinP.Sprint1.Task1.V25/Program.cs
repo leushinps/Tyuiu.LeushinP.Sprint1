@@ -26,27 +26,16 @@ namespace Tyuiu.LeushinP.Sprint1.Task1.V25
 
 
             double x, y;
-
-            Console.WriteLine("Ввести значение X:");
+            Console.WriteLine("Введите значение X:");
             x = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Ввод значение Y:");
+            Console.WriteLine("Введите значение Y:");
             y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine(ds.Calculate(x, y));
 
-            if (1 + x == 0)
-            {
-                Console.WriteLine("Ошибка Знаменатель (1 + x) не может быть равен нулю.");
-            }
-            else
-            {
-                Console.WriteLine("****************************************************************************");
-                Console.WriteLine("* Результат:                                                               *");
-                Console.WriteLine("****************************************************************************");
-
-                Console.WriteLine(ds.Calculate(x, y));
-                Console.WriteLine();
-            }
-
+            Console.ReadLine();
         }
     }
 }
